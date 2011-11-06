@@ -1,0 +1,46 @@
+
+【ソフト名】jojo語関連検索 
+【著作権者】狩野達也
+【制作日】今日
+【種　別】潜在意味解析（共起行列の作成,特異値分解,特徴ベクトルの生成,cosの計算）
+【連絡先】kokuban.kumasan@gmail.com
+【動作環境】CentOS 6 
+【開発環境】CentOS 6 
+
+―――――――――――――――――――――――――――――――――――――
+≪著作権および免責事項≫
+
+ ( . _ . )
+
+―――――――――――――――――――――――――――――――――――――
+
+【はじめに】
+これは入力した語句とジョジョに関連した言葉の
+
+このモジュールでは、行列計算を行うPHP Extensionである
+「php-eigen」を利用しています。
+
+
+【インストール方法】
+以下の通り.
+
+・php-eigen
+$ git clone git://github.com/kokukuma/php-eigen.git
+$ cd php-eigen;
+$ phpize
+$ ./configure
+$ make
+$ make install 
+$ vi /etc/php.ini
+	"extension=eigen.so"
+
+・php-eigen
+$ git clone git://github.com/kokukuma/jojo_word.git
+
+
+【使い方例】
+$ php jojoword.php エリナ
+
+
+
+―――――――――――――――――――――――――――――――――――――
